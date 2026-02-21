@@ -17,3 +17,8 @@ npm-debug.log*
 # Temporary files
 *.tmp
 *.temp
+
+# Deployment configs (contain sensitive data)
+Caddyfile-complete
+hotel-caddy-config.txt
+hotel.donsanx.me.conf
