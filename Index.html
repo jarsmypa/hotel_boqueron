@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hotel Boquerón en la Colonia Neuland, Chaco. Elegancia, gastronomia y hospitalidad chaqueña."
+    />
+    <title>Hotel Boquerón | Neuland, Chaco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav__brand">
+          <img
+            src="Assets/Logo/Logo%20Blanco.svg"
+            alt="Hotel Boquerón"
+            class="nav__logo"
+            width="48"
+            height="48"
+          />
+          <div>
+            <span class="nav__title">Hotel Boquerón</span>
+            <span class="nav__subtitle">Neuland, Chaco</span>
+          </div>
+        </div>
+
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div id="nav-menu" class="nav__links">
+          <a href="#inicio" data-i18n="nav.home">Inicio</a>
+          <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+          <a href="#habitaciones" data-i18n="nav.rooms">Habitaciones</a>
+          <a href="#restaurante" data-i18n="nav.restaurant">Restaurante</a>
+          <a href="#contacto" class="btn btn--ghost" data-i18n="nav.contact">Contacto</a>
+          <a href="#reservas" class="btn btn--primary" data-i18n="nav.reserve">Reservar</a>
+          <div class="nav__controls">
+            <div class="theme-switch">
+              <span class="theme-label" data-i18n="theme.dark">Oscuro</span>
+              <label class="switch">
+                <input type="checkbox" id="theme-toggle" aria-label="Cambiar tema" />
+                <span class="slider"></span>
+              </label>
+              <span class="theme-label" data-i18n="theme.light">Claro</span>
+            </div>
+            <div class="lang-switch" role="tablist" aria-label="Idioma">
+              <button class="lang-toggle" data-lang="es" type="button">ES</button>
+              <button class="lang-toggle" data-lang="de" type="button">DE</button>
+              <button class="lang-toggle" data-lang="en" type="button">EN</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <img
+          src="Assets/edificio-hotel.webp"
+          alt="Fachada del Hotel Boquerón"
+          class="hero__image"
+          fetchpriority="high"
+        />
+        <div class="hero__overlay"></div>
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Oasis de confort en el Chaco</p>
+          <h1 data-i18n="hero.title">Elegancia serena, naturaleza viva.</h1>
+          <p class="hero__lead" data-i18n="hero.lead">
+            Un refugio con gastronomia de autor, habitaciones premium y la hospitalidad
+            calida de la Colonia Neuland.
+          </p>
+          <div class="hero__actions">
+            <a href="#reservas" class="btn btn--primary" data-i18n="hero.reserve">Reservar ahora</a>
+            <a href="#experiencia" class="btn btn--ghost" data-i18n="hero.discover">
+              Descubrir experiencia
+            </a>
+          </div>
+          <div class="hero__meta">
+            <div>
+              <span class="hero__label" data-i18n="hero.location">Ubicacion</span>
+              <strong>Av. 1 de Febrero</strong>
+            </div>
+            <div>
+              <span class="hero__label" data-i18n="hero.checkin">Check-in</span>
+              <strong>14:00</strong>
+            </div>
+            <div>
+              <span class="hero__label" data-i18n="hero.checkout">Check-out</span>
+              <strong>11:00</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section section--light">
+        <div class="container split">
+          <div class="split__content" data-reveal>
+            <p class="eyebrow" data-i18n="exp.eyebrow">Experiencia Neuland</p>
+            <h2 data-i18n="exp.title">Naturaleza, cultura y descanso.</h2>
+            <p data-i18n="exp.lead">
+              En el corazon del Chaco paraguayo, combinamos detalles artesanales,
+              servicios premium y un ambiente que invita a desconectar. Cada espacio
+              fue pensado para elevar tu estadia.
+            </p>
+            <div class="feature-grid">
+              <article class="feature">
+                <h3 data-i18n="exp.f1.title">Hospitalidad autentica</h3>
+                <p data-i18n="exp.f1.desc">Personal atento, tiempos rapidos y calidez chaqueña.</p>
+              </article>
+              <article class="feature">
+                <h3 data-i18n="exp.f2.title">Espacios de lujo</h3>
+                <p data-i18n="exp.f2.desc">Detalles nobles, textiles suaves y vistas abiertas.</p>
+              </article>
+              <article class="feature">
+                <h3 data-i18n="exp.f3.title">Gastronomia local</h3>
+                <p data-i18n="exp.f3.desc">Sabores regionales y cocina internacional curada.</p>
+              </article>
+              <article class="feature">
+                <h3 data-i18n="exp.f4.title">Conectividad total</h3>
+                <p data-i18n="exp.f4.desc">Wi-Fi veloz en todo el complejo.</p>
+              </article>
+            </div>
+          </div>
+          <div class="split__media" data-reveal>
+            <img
+              src="Assets/paisaje.webp"
+              alt="Paisaje del Chaco"
+              loading="lazy"
+            />
+            <div class="media__badge">Desde 1988</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habitaciones" class="section section--cream">
+        <div class="container" data-reveal>
+          <div class="section__header">
+            <p class="eyebrow" data-i18n="rooms.eyebrow">Habitaciones</p>
+            <h2 data-i18n="rooms.title">Confort en cada detalle.</h2>
+            <p data-i18n="rooms.lead">
+              Dormitorios premium con insonorizacion, climatizacion y
+              amenities pensados para un descanso profundo.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3 data-i18n="rooms.suite.title">Suite Boqueron</h3>
+              <p data-i18n="rooms.suite.lead">Espacio amplio, sala privada y cama king.</p>
+              <ul class="card__list">
+                <li data-i18n="rooms.suite.f1">Desayuno incluido</li>
+                <li data-i18n="rooms.suite.f2">Minibar gourmet</li>
+                <li data-i18n="rooms.suite.f3">Vistas al jardin</li>
+              </ul>
+              <button class="card__action" data-room="Suite Boqueron" data-i18n="rooms.details">
+                Ver detalles
+              </button>
+            </article>
+            <article class="card">
+              <h3 data-i18n="rooms.double.title">Premium Doble</h3>
+              <p data-i18n="rooms.double.lead">Ideal para parejas o amigos.</p>
+              <ul class="card__list">
+                <li data-i18n="rooms.double.f1">Colchones ortopedicos</li>
+                <li data-i18n="rooms.double.f2">Escritorio de trabajo</li>
+                <li data-i18n="rooms.double.f3">Ducha tipo lluvia</li>
+              </ul>
+              <button class="card__action" data-room="Premium Doble" data-i18n="rooms.details">
+                Ver detalles
+              </button>
+            </article>
+            <article class="card">
+              <h3 data-i18n="rooms.family.title">Familiar</h3>
+              <p data-i18n="rooms.family.lead">Comodidad para grupos y familias.</p>
+              <ul class="card__list">
+                <li data-i18n="rooms.family.f1">Espacio flexible</li>
+                <li data-i18n="rooms.family.f2">Dos ambientes</li>
+                <li data-i18n="rooms.family.f3">Servicio de habitaciones</li>
+              </ul>
+              <button class="card__action" data-room="Familiar" data-i18n="rooms.details">
+                Ver detalles
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="restaurante" class="section section--light">
+        <div class="container" data-reveal>
+          <div class="section__header">
+            <p class="eyebrow" data-i18n="rest.eyebrow">Restaurante Boqueron</p>
+            <h2 data-i18n="rest.title">Una carta viva, local y sofisticada.</h2>
+            <p data-i18n="rest.lead">
+              Cocina paraguaya contemporanea, ingredientes frescos y un menu
+              bilingue pensado para cada momento del dia.
+            </p>
+            <div class="schedule">
+              <div>
+                <span data-i18n="rest.breakfast">Desayuno</span>
+                <strong>06:00 - 09:30</strong>
+              </div>
+              <div>
+                <span data-i18n="rest.lunch">Almuerzo</span>
+                <strong>11:00 - 14:00</strong>
+              </div>
+              <div>
+                <span data-i18n="rest.dinner">Cena</span>
+                <strong>18:00 - 23:00</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="menu__tabs" role="tablist" aria-label="Categorias del menu">
+              <button class="menu__tab" data-category="Especialidades" role="tab" data-i18n="menu.specials">
+                Especialidades
+              </button>
+              <button class="menu__tab" data-category="Minutas" role="tab" data-i18n="menu.snacks">
+                Minutas
+              </button>
+              <button class="menu__tab" data-category="Picadas" role="tab" data-i18n="menu.sharing">
+                Picadas
+              </button>
+              <button class="menu__tab" data-category="Pizzas" role="tab" data-i18n="menu.pizzas">
+                Pizzas
+              </button>
+              <button class="menu__tab" data-category="Carnes & Milanesas" role="tab" data-i18n="menu.meats">
+                Carnes &amp; Milanesas
+              </button>
+              <button class="menu__tab" data-category="Pastas & Guarniciones" role="tab" data-i18n="menu.pastas">
+                Pastas &amp; Guarniciones
+              </button>
+              <button class="menu__tab" data-category="Ensaladas & Postres" role="tab" data-i18n="menu.salads">
+                Ensaladas &amp; Postres
+              </button>
+            </div>
+            <div class="menu__list" aria-live="polite"></div>
+            <p class="menu__note" data-i18n="menu.note">Todos los precios son en guaranies.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reservas" class="section section--dark">
+        <div class="container reserve" data-reveal>
+          <div>
+            <p class="eyebrow" data-i18n="cta.eyebrow">Reservas</p>
+            <h2 data-i18n="cta.title">Tu estadia empieza aqui.</h2>
+            <p data-i18n="cta.lead">
+              Escribenos o llama directo. Respondemos rapido y
+              personalizamos tu experiencia.
+            </p>
+          </div>
+          <div class="reserve__actions">
+            <a href="tel:+595986126793" class="btn btn--primary" data-i18n="cta.call">
+              Llamar ahora
+            </a>
+            <a href="mailto:hotel@neuland.com.py" class="btn btn--ghost" data-i18n="cta.mail">
+              Enviar correo
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+      <div class="container footer__grid">
+        <div>
+          <img
+            src="Assets/Logo/Logo%20Blanco.svg"
+            alt="Hotel Boquerón"
+            class="footer__logo"
+            width="120"
+            height="40"
+            loading="lazy"
+          />
+          <p data-i18n="footer.about">
+            Un refugio de lujo y tradicion en el Chaco paraguayo.
+            Gracias por su visita.
+          </p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.contact">Contacto</h3>
+          <p>0493 240 311 / 0986 126 793</p>
+          <p>hotel@neuland.com.py</p>
+          <p>Av. 1 de Febrero, Colonia Neuland, Chaco - Paraguay</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.links">Enlaces</h3>
+          <a href="http://www.neuland.com.py" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="footer.colony">Web de la Colonia</span>
+          </a>
+          <a href="#experiencia" data-i18n="footer.experience">Experiencia</a>
+          <a href="#restaurante" data-i18n="footer.menu">Carta del Restaurante</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.rights">&copy; 2026 Hotel Boqueron. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <div class="modal" id="room-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" role="document">
+        <button class="modal__close" type="button" data-modal-close aria-label="Cerrar">
+          ×
+        </button>
+        <div class="modal__grid">
+          <div>
+            <img class="modal__image" alt="Habitacion" />
+            <div class="modal__thumbs"></div>
+          </div>
+          <div>
+            <p class="eyebrow" data-i18n="modal.eyebrow">Habitaciones</p>
+            <h3 class="modal__title"></h3>
+            <p class="modal__subtitle"></p>
+            <p class="modal__desc"></p>
+            <ul class="modal__list"></ul>
+            <div class="modal__actions">
+              <a href="#reservas" class="btn btn--primary" data-i18n="modal.reserve">Reservar</a>
+              <button class="btn btn--ghost" type="button" data-modal-close data-i18n="modal.close">
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
